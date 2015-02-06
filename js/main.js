@@ -19,7 +19,10 @@ function onDeviceReady() {
             e.preventDefault();
 			if (data.prevPage.attr('id') == 'connexion') {
 				//do nothing
-			}
+			} else if (data.prevPage.attr('id') == 'Accueil_jeu' )
+				{ window.history.back();
+				  window.history.back();
+				  }
 			else {
 				window.history.back();
 			}
