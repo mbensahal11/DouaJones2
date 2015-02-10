@@ -17,7 +17,7 @@ function onDeviceReady() {
 	//Si on appuie sur le back button sur la page principale et que la dernière page visitée et la page de connection, on quitte l'application
 	document.addEventListener("backbutton",  function (e, data) {
             e.preventDefault();
-			if (data.prevPage.attr('id') == 'connexion') {
+			if (data.activePage.attr('id') == 'connexion') {
 				//do nothing
 			} else if (data.prevPage.attr('id') == 'Accueil_jeu' )
 				{ window.history.back();
