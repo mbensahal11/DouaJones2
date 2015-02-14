@@ -22,7 +22,7 @@ function onDeviceReady() {
 			}
 			else {
 				window.history.back();
-				$.mobile.loading( 'hide' );
+				$.mobile.loadingMessage = false;
 			}
         }, false );
 		
