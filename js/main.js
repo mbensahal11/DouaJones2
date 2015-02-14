@@ -19,10 +19,9 @@ function onDeviceReady() {
             e.preventDefault();
 			if (data.prevPage.attr('id') == 'connexion') {
 				//do nothing
-			} /*else if (mobile.activePage.attr('id')=='Accueil_jeu') {
-				$.mobile.changePage("#connexion");
-				retrun false;
-			} */
+			} else if (mobile.activePage.attr('id')=='Accueil_jeu') {
+				mobile.changePage("#connexion");
+			}
 			else {
 				window.history.back();
 			}
