@@ -17,12 +17,13 @@ function onDeviceReady() {
 	//Si on appuie sur le back button sur la page principale et que la dernière page visitée et la page de connection, on quitte l'application
 	document.addEventListener("backbutton",  function (e, data) {
             e.preventDefault();
+            $.mobile.loadingMessage = false;
 			if (data.prevPage.attr('id') == 'connexion') {
 				//do nothing
 			}
 			else {
 				window.history.back();
-				$.mobile.loadingMessage = false;
+				
 			}
         }, false );
 		
