@@ -48,9 +48,8 @@ $(document).on("click","#btn_emprunt", function(event) {
 		event.stopImmediatePropagation();
 		$('#nom_entreprise2').html("Banque Mondiale du Commerce");
 		$('#entreprise_active2').html("Banque Mondiale du Commerce");
-		$('#texte_fiche_entreprise2').text("La Banque Mondiale du Commerce est le cœur financier de la région. Elle est un pilier monétaire important aux entreprises environnantes et de nombreux citoyens lui confient ses épargnes. Durement frappée par la crise économique en 2008, la banque s’est bien remise et planifie d’intensifier ses affaires intn"tio);
 		/*openinfo2(Entreprise[1]); */
-		$.mobile.changePage("#emprunt");
+		$.mobile.changePage("#achat_vente");
 		return false;
 	});
 	
