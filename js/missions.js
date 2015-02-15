@@ -47,7 +47,7 @@ $(document).on("click","#btn_emprunt", function(event) {
 		event.stopImmediatePropagation();
 		openinfo2(Entreprise[1]);
 		return false;
-		$.mobile.changePage("#achat_vente");
+		$.mobile.changePage("#emprunt");
 	});
 	
 			
