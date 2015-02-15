@@ -5,7 +5,7 @@ $(document).on("click","#btn_emprunt", function(event) {
 		return false;
 	});
 	
-
+/*
 
 		var Entreprise = [];
 		Entreprise[1] = {Objet :BMC,
@@ -19,7 +19,8 @@ $(document).on("click","#btn_emprunt", function(event) {
 						 texteProfil : "La Banque Mondiale du Commerce est le cœur financier de la région. Elle est un pilier monétaire important aux entreprises environnantes et de nombreux citoyens lui confient ses épargnes. Durement frappée par la crise économique en 2008, la banque s’est bien remise et planifie d’intensifier ses affaires internationales dans un avenir proche."
 						 };
 						 
-	var ok_ordre = false
+						 */
+/*	var ok_ordre = false
 	function openinfo2(entreprise) {					 
 	document.getElementById('image_entreprise').setAttribute('src',entreprise.srcImageentreprise);
 			if (entreprise.index == 1) {
@@ -40,12 +41,12 @@ $(document).on("click","#btn_emprunt", function(event) {
 			}
 			
 			
-	};
+	}; */
 	
 	$(document).on("click","#btn_achat_vente", function(event) {
 		event.preventDefault();
 		event.stopImmediatePropagation();
-		openinfo2(Entreprise[1]);
+		/*openinfo2(Entreprise[1]); */
 		$.mobile.changePage("#emprunt");
 		return false;
 	});
