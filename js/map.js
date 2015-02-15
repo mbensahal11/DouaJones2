@@ -1147,10 +1147,10 @@ function initialize() {
 				}
 				return false;
 				
-				$(document).on("click","#btn_achat_vente", function(event) {
+				/*$(document).on("click","#btn_achat_vente", function(event) {
         					openinfo(Entreprise[1]);
 								 return false;
-					 });
+					 }); */
 			});
 
 	
