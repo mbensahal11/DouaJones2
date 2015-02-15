@@ -39,14 +39,15 @@ $(document).on("click","#btn_emprunt", function(event) {
 				ok_ordre = false;
 			}
 			
-			$.mobile.changePage("#achat_vente");
-	}
+			
+	};
 	
 	$(document).on("click","#btn_achat_vente", function(event) {
 		event.preventDefault();
 		event.stopImmediatePropagation();
 		openinfo2(Entreprise[1]);
 		return false;
+		$.mobile.changePage("#achat_vente");
 	});
 	
 			
