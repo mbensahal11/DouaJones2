@@ -8,7 +8,7 @@ $(document).on("click","#btn_emprunt", function(event) {
 $(document).on("click","#btn_achat_vente", function(event) {
 		event.preventDefault();
 		event.stopImmediatePropagation();
-		$.mobile.changePage("#Passer_un_ordre");
+		$.mobile.changePage("achat_vente");
 		return false;
 	});
 
