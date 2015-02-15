@@ -43,16 +43,16 @@ $(document).on("click","#btn_emprunt", function(event) {
 			
 	}; */
 	
-	/*$(document).on("click","#btn_achat_vente", function(event) {
+	$(document).on("click","#btn_achat_vente", function(event) {
 		event.preventDefault();
 		event.stopImmediatePropagation();
 		$('#nom_entreprise').html("Banque Mondiale du Commerce");
 		$('#entreprise_active').html("Banque Mondiale du Commerce");
-		$('#entreprise_active').data("id_entreprise", 1);
-		/*openinfo2(Entreprise[1]); 
+		$('#entreprise_active').data("id_entreprise",1);
+		/*openinfo2(Entreprise[1]); */
 		$.mobile.changePage("#achat_vente");
 		return false;
-	}); */
+	});
 	
 			
 			
