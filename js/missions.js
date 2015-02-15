@@ -42,8 +42,11 @@ $(document).on("click","#btn_emprunt", function(event) {
 			$.mobile.changePage("#achat_vente");
 	}
 	
-	$(document).on("click","#btn_achat_vente", function() {
+	$(document).on("click","#btn_achat_vente", function(event) {
+		event.preventDefault();
+		event.stopImmediatePropagation();
 		openinfo2(Entreprise[1]);
+		return false;
 	});
 	
 			
