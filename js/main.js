@@ -23,7 +23,7 @@ function onDeviceReady() {
 			} else if ($(document).mobile.activePage.attr('id') == 'Accueil_jeu') {
 			$(document).mobile.changePage("#emprunt");
 			}
-			else {
+			else if ($(document).mobile.activePage.attr('id') !== 'Accueil_jeu') {
 				window.history.back();
 				
 			}
