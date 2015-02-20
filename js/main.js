@@ -20,7 +20,7 @@ function onDeviceReady() {
             $.mobile.loadingMessage = false;
 			if (data.prevPage.attr('id') == 'connexion') {
 				//do nothing
-			} else if ($.mobile.activePage.attr('id') == 'Accueil_jeu') {
+			} else if (data.prevPage.attr('id') == 'Accueil_jeu') {
 			$.mobile.changePage("#emprunt");
 			}
 			else {
