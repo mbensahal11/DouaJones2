@@ -17,11 +17,11 @@ function onDeviceReady() {
 	//Si on appuie sur le back button sur la page principale et que la dernière page visitée et la page de connection, on quitte l'application
 	document.addEventListener("backbutton",  function (e, data) {
             e.preventDefault();
-            $.mobile.loadingMessage = false;
+            $(document).mobile.loadingMessage = false;
 			if (data.prevPage.attr('id') == 'connexion') {
 				//do nothing
-			} else if (data.prevPage.attr('id') == 'Accueil_jeu') {
-			$.mobile.changePage("#emprunt");
+			} else if ($(document).mobile.activePage.attr('id') == 'Accueil_jeu') {
+			$(document).mobile.changePage("#emprunt");
 			}
 			else {
 				window.history.back();
