@@ -1,0 +1,4 @@
+git add BMC.png
+git commit -m 'add png file'
+git remote add origin https://github.com/mbensahal11/DouaJones2/new/master/img
+git push -u origin maste
